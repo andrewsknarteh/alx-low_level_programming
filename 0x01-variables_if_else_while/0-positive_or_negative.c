@@ -1,24 +1,32 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+#include <stdlio.h>
+
 /**
- * main -Prints if an output is positive, zero or negative
+ * main - Prints if number is positive, zero, or negative
  *
  * Return: Always (Success)
  */
-int mani(void)
+int main(void)
 {
 	int n;
 
-	srand(time(o));
+	srand (time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n>0)
+	/* your code goes here*/
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
+
 	}
-	else if (n==0)
+	else if (n == 0)
 	{
-		printf("%d is zero\n", n)'
+		printf("%d is zero\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
+
