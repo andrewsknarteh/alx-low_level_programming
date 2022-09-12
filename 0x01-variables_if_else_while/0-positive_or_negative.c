@@ -7,7 +7,7 @@
  *
  * Return: Always (Success)
  */
-int main(void)
+void trimTrailing(char * string)
 { 
 	int n;
 	srand(time(0));
