@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * jack_bauer - function to print every minute from 00:00 to 23:59
  * Return: 0
@@ -9,7 +10,7 @@ void jack_bauer(void)
 
 	int minutes = 0;
 	int hours_remainder;
-	int mins_reminder;
+	int mins_remainder;
 
 	while (hours <= 23)
 	{
