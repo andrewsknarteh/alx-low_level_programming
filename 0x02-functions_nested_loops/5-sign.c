@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_sign - prints sign of a number based on condition
  * @n: argument of the function passed
