@@ -2,11 +2,12 @@
 #include "main.h"
 
 /**
- * print_diagonal -prints a diagonal
- * @n: parameter
- * Return: returns nothing
- */
-int print_diagonal(int n)
+*print_diagonal - prints a diagonal
+*@n: parameter
+*Return: returns nothing
+*/
+
+void print_diagonal(int n)
 {
 	int len, space;
 
@@ -16,17 +17,17 @@ int print_diagonal(int n)
 		{
 			for (space = 0; space < len; space++)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 
-			_putchar('\\');
+			putchar('\\');
 
-			if (len == (n- 1))
+			if (len == (n - 1))
 			{
 				continue;
 			}
-			_putchar('\n');
+			putchar('\n');
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
