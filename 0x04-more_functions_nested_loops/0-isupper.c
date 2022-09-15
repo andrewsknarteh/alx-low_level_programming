@@ -12,5 +12,6 @@ int _isupper(int c)
 	{
 		retrun (1);
 	}
+	
 	return (0);
 }
