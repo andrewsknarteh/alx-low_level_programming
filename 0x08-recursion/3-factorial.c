@@ -6,9 +6,9 @@
  *
  * Return: the factorial of the number
  */
-int factorial(int n);
+int factorial(int n)
 {
-	int (next_factorial);
+	int next_factorial;
 
 	if (n < 0)
 		return (-1);
