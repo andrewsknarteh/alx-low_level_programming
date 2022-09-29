@@ -1,30 +1,30 @@
 #include "main.h"
 
-int actual_prime(int n, int i);
-
 /**
- * is_prime_number - indicates a prime number
+ * is_prime_nummber - indicstes a prime number
  * @n: number
- * Return: 1 if n is a prime number, 0 if not
+ * Return: 1 if n is prime, 0 otherwise
  */
 int is_prime_number(int n)
 {
+	int start = n / 2;
+
 	if (n <= 1)
 		return (0);
-	return (actual_prime(n, n - 1));
+	return (is_prime(n, start));
 }
 
 /**
- * actual_prime - calculates if a number is prime
+ * is_prime - calculates if number is prime
  * @n: number
- * @i: counter
- * Return: 1 if n is prime, 0 if not
+ * #start: counter
+ * Return: 1 if n is prime, 0 otherwise
  */
-int actaul_prime(int n, int i)
+int is_prime(int n, int start)
 {
-	if (i == 1)
+	if (start <= 1)
 		return (1);
-	if (n % i == 0 && 1 > 0)
+	if (n % start == 0)
 		return (0);
-	return (actual_prime(n, i - 1));
+	return (is_prime(n, start - 1));
 }
