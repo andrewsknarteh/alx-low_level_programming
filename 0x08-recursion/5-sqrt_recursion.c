@@ -6,9 +6,10 @@ int real_root(int n, int i);
  * _sqrt_recursion - returns squqre root of number
  * @n: number
  * Return: sqrt
- */int _sqrt_recursion(int n)
+ */
+iint _sqrt_recursion(int n)
 {
-	if (n < 0 )
+	if (n < 0)
 		return (-1);
 	return (real_root(n, 0));
 }
