@@ -7,7 +7,7 @@ int real_root(int n, int i);
  * @n: number
  * Return: sqrt
  */
-iint _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
