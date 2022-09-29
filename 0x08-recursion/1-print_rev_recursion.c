@@ -1,4 +1,4 @@
-#include "main.g"
+#include "main.h"
 
 /**
  * _print_rev_recursion - prints a reversed string
