@@ -92,7 +92,7 @@ char **strtow(char *str)
 				}
 			}
 		}
-		spit[words] = NULL;
+		split[words] = NULL;
 		return (split);
 	}
 	else
