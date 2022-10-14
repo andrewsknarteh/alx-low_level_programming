@@ -4,7 +4,7 @@
 
 /**
  * print_c - print a char
- * @c: char to be printed
+ * @c: char to print
  *
  * Return: void
  */
@@ -15,7 +15,7 @@ void print_c(va_list c)
 
 /**
  * print_s - prints a string
- * @s: string to be printed
+ * @s: string to print
  *
  * Return: void
  */
@@ -29,7 +29,7 @@ void print_s(va_list s)
 }
 
 /**
- * print_i - print an int
+ * print_i - prints an int
  * @i: int to print
  *
  * Return: void
@@ -40,7 +40,7 @@ void print_i(va_list i)
 }
 
 /**
- * print_f - prints float
+ * print_f - prints a float
  * @f: float to print
  *
  * Return: void
@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				p[j].f(valist);
-				separator = ",";
+				separator = ", ";
 				break;
 			}
 			j++;
